@@ -1,8 +1,11 @@
 function Armstrong() {
     let n, sum = 0,
         r, c, temp;
-    n = Number(document.getElementById("put_number").value);
-
+    n =document.getElementById("put_number");
+if(n.value.trim()==""){
+    alert("please enter the number");
+}
+else{
     temp = n;
     while (n > 0) {
         r = n % 10;
@@ -20,6 +23,7 @@ function Armstrong() {
         document.getElementById("demo1").innerHTML = "Not Armstrong number";
     }
 
+}
 }
 
 function Myclear() {
