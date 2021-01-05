@@ -6,6 +6,7 @@ if(n.value.trim()==""){
     alert("please enter the number");
 }
 else{
+    n=n.value;
     temp = n;
     while (n > 0) {
         r = n % 10;
